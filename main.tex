@@ -1,5 +1,6 @@
 \documentclass{IEEEtran}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
 
 % Bib
 \usepackage[backend=biber,style=ieee]{biblatex}
@@ -15,6 +16,8 @@ Albin Forsberg}
 \maketitle
 
 \tableofcontents
+% This is only a test for sitations!
+In \cite{bigData} and \cite{pyvis} we can see that big data is shit.
 % Every section in its own file (better for git)
 \include{Chapters/background}
 \include{Chapters/purpose}
@@ -23,6 +26,7 @@ Albin Forsberg}
 \include{Chapters/findings}
 \include{Chapters/timeline}
 
-\printbibliography
+% Bibliography in table of content
+\printbibliography[heading=bibintoc]
 
 \end{document}
