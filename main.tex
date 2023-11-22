@@ -12,24 +12,18 @@
 
 \author{\IEEEauthorblockN{Gabriel Adward,
 Albin Forsberg}
-\IEEEauthorblockA{\\adga21bv@student.ju.se, foal21fs@student.ju.se \\ Jönköping University}}
+\IEEEauthorblockA{\\adga21bv@student.ju.se, foal21fs@student.ju.se \\ Jönköping University, \today}}
 \maketitle
 
 \tableofcontents
-% This is only a test for sitations!
-In \cite{bigData} and \cite{pyvis} we can see that big data is shit.
 % Every section in its own file (better for git)
-\include{Chapters/background}
- 
-
-\include{Chapters/purpose}
-\include{Chapters/companyCollab}
-
-
-\include{Chapters/theoreticalFramework}
-\include{Chapters/Methology}
-\include{Chapters/findings}
-\include{Chapters/timeline}
+\input{Chapters/background}
+\input{Chapters/purpose}
+\input{Chapters/companyCollab}
+\input{Chapters/theoreticalFramework} 
+\input{Chapters/Methology}
+\input{Chapters/findings}
+\input{Chapters/timeline}
 
 % Bibliography in table of content
 \printbibliography[heading=bibintoc]
