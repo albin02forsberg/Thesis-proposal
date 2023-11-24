@@ -1,18 +1,33 @@
-\documentclass{IEEEtran}
-\usepackage{graphicx} % Required for inserting images
-\usepackage{hyperref}
-
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
 % Bib
 \usepackage[backend=biber,style=ieee]{biblatex}
 \addbibresource{bib.bib}
 
 \title{Here we will put the name of the thesis}
 
+\makeatletter
+\newcommand{\linebreakand}{%
+  \end{@IEEEauthorhalign}
+  \hfill\mbox{}\par
+  \mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
+\author{\IEEEauthorblockN{Gabriel Adward}
+\IEEEauthorblockA{adga21bv@student.ju.se}
+\and
+\IEEEauthorblockN{Albin Forsberg}
+\IEEEauthorblockA{foal21fs@student.ju.se}
+}
+
 \begin{document}
 
-\author{\IEEEauthorblockN{Gabriel Adward,
-Albin Forsberg}
-\IEEEauthorblockA{\\adga21bv@student.ju.se, foal21fs@student.ju.se \\ Jönköping University, \today}}
 \maketitle
 
 \tableofcontents
